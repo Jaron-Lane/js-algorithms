@@ -99,7 +99,7 @@ function findNemo(array) {
         console.log('running')
         if (array[i] === 'nemo') {
             console.log('Found NEMO!');
-            break; // <-- prevents code from running after 'nemo' is found
+            break; // <-- prevents this code from running after 'nemo' is found
         }
     }
 }
