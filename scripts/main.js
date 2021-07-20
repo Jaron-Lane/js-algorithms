@@ -52,7 +52,7 @@ function funChallenge(input) {
     return a; // O(1) --> the return only runs once
   }
 
-  // ANSWER: BIG O(3 + 4n)
+  // ANSWER: BIG O(3 + 4n) --> Simplified to O(n)
 
 
 
@@ -84,4 +84,26 @@ function anotherFunChallenge(input) {
     let whoAmI = "I don't know"; // O(1)
   }
 
-// ANSWER: BIG O(4 + 7n)
+// ANSWER: BIG O(4 + 7n) --> Simplified to O(n)
+
+
+
+
+
+const nemo = ['Nemo'];
+const everyone = ['dory', 'bruce', 'marlin', 'gill', 'nemo', 'bloat', 'nigel', 'darla', 'squirt', 'crush'];
+const largeGroup = new Array(10000).fill('nemo');
+
+function findNemo(array) {
+    for (let i = 0; i < array.length; i++) {
+        console.log('running')
+        if (array[i] === 'nemo') {
+            console.log('Found NEMO!');
+            break; // <-- prevents code from running after 'nemo' is found
+        }
+    }
+}
+
+findNemo(everyone);
+// This is an example of Worst Case: If nemo was at the end of the array
+// Big O only cares about worst case. Worst Case for this example is O(n)
