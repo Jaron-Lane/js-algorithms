@@ -107,3 +107,26 @@ function findNemo(array) {
 findNemo(everyone);
 // This is an example of Worst Case: If nemo was at the end of the array
 // Big O only cares about worst case. Worst Case for this example is O(n)
+
+
+
+
+
+
+
+
+const printFirstItemThenFirstHalfThenSayHi100Times = (items) => {
+    console.log(items[0]);
+
+    const middleIndex = Math.floor(items.length / 2);
+    const index = 0;
+
+    while (index < middleIndex) {
+        console.log(items[index]);
+        index++;
+    }
+
+    for (let i = 0; i <100; i++) {
+        console.log('hi');
+    }
+}
